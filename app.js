@@ -43,6 +43,13 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from server!" });
+});
+
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from server 2!" });
+})
 
 app.listen(PORT, () => `App is running on port: ${PORT}`)
 
