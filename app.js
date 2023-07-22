@@ -43,11 +43,11 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.get("/", (req, res) => {
+app.get("/app-status", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
-app.get("/", (req, res) => {
+app.get("/app-health", (req, res) => {
   res.json({ message: "Hello from server 2!" });
 })
 
